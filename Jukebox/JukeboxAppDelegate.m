@@ -7,11 +7,16 @@
 //
 
 #import "JukeboxAppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation JukeboxAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [Parse setApplicationId:@"PyGJdi0jnudDi5FaLxk5gOXPXHg97xCP5t17zTCT"
+                  clientKey:@"bQDgtxz4F4zqZhKMYyBHlfkmnCyYlG3qnyiMPAh1"];
+    
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     // Override point for customization after application launch.
     return YES;
 }

@@ -22,6 +22,22 @@
 		06A4385517A754D200138A3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A4383417A754D200138A3C /* UIKit.framework */; };
 		06A4385D17A754D200138A3C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06A4385B17A754D200138A3C /* InfoPlist.strings */; };
 		06A4385F17A754D200138A3C /* JukeboxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A4385E17A754D200138A3C /* JukeboxTests.m */; };
+		06A4386A17A7564E00138A3C /* SetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A4386917A7564E00138A3C /* SetupViewController.m */; };
+		06A4386B17A7564E00138A3C /* SetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A4386917A7564E00138A3C /* SetupViewController.m */; };
+		06A4386E17A7664600138A3C /* OwnerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A4386D17A7664600138A3C /* OwnerModel.m */; };
+		06A4386F17A7664600138A3C /* OwnerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A4386D17A7664600138A3C /* OwnerModel.m */; };
+		06A9BDC517B46B8F00566C6A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A9BDC417B46B8F00566C6A /* Parse.framework */; };
+		06A9BDC717B46BCE00566C6A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A9BDC617B46BCE00566C6A /* AudioToolbox.framework */; };
+		06A9BDC917B46BE100566C6A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A9BDC817B46BE100566C6A /* CFNetwork.framework */; };
+		06A9BDCB17B46BF800566C6A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A9BDCA17B46BF800566C6A /* CoreLocation.framework */; };
+		06A9BDCD17B46BFF00566C6A /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A9BDCC17B46BFF00566C6A /* libz.1.1.3.dylib */; };
+		06A9BDCF17B46C0500566C6A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A9BDCE17B46C0500566C6A /* MobileCoreServices.framework */; };
+		06A9BDD117B46C0C00566C6A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A9BDD017B46C0C00566C6A /* QuartzCore.framework */; };
+		06A9BDD317B46C1300566C6A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A9BDD217B46C1300566C6A /* Security.framework */; };
+		06A9BDD517B46C1B00566C6A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A9BDD417B46C1B00566C6A /* StoreKit.framework */; };
+		06A9BDD717B46C2300566C6A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A9BDD617B46C2300566C6A /* SystemConfiguration.framework */; };
+		06A9BDDA17B488C800566C6A /* HostsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A9BDD917B488C800566C6A /* HostsTableViewController.m */; };
+		06A9BDDB17B488C800566C6A /* HostsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A9BDD917B488C800566C6A /* HostsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +71,22 @@
 		06A4385A17A754D200138A3C /* JukeboxTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JukeboxTests-Info.plist"; sourceTree = "<group>"; };
 		06A4385C17A754D200138A3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		06A4385E17A754D200138A3C /* JukeboxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JukeboxTests.m; sourceTree = "<group>"; };
+		06A4386817A7564E00138A3C /* SetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetupViewController.h; sourceTree = "<group>"; };
+		06A4386917A7564E00138A3C /* SetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetupViewController.m; sourceTree = "<group>"; };
+		06A4386C17A7664600138A3C /* OwnerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OwnerModel.h; sourceTree = "<group>"; };
+		06A4386D17A7664600138A3C /* OwnerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OwnerModel.m; sourceTree = "<group>"; };
+		06A9BDC417B46B8F00566C6A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		06A9BDC617B46BCE00566C6A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		06A9BDC817B46BE100566C6A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		06A9BDCA17B46BF800566C6A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		06A9BDCC17B46BFF00566C6A /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		06A9BDCE17B46C0500566C6A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		06A9BDD017B46C0C00566C6A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		06A9BDD217B46C1300566C6A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		06A9BDD417B46C1B00566C6A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		06A9BDD617B46C2300566C6A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		06A9BDD817B488C800566C6A /* HostsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostsTableViewController.h; sourceTree = "<group>"; };
+		06A9BDD917B488C800566C6A /* HostsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +94,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06A9BDD717B46C2300566C6A /* SystemConfiguration.framework in Frameworks */,
+				06A9BDD517B46C1B00566C6A /* StoreKit.framework in Frameworks */,
+				06A9BDD317B46C1300566C6A /* Security.framework in Frameworks */,
+				06A9BDD117B46C0C00566C6A /* QuartzCore.framework in Frameworks */,
+				06A9BDCF17B46C0500566C6A /* MobileCoreServices.framework in Frameworks */,
+				06A9BDCD17B46BFF00566C6A /* libz.1.1.3.dylib in Frameworks */,
+				06A9BDCB17B46BF800566C6A /* CoreLocation.framework in Frameworks */,
 				06A4383317A754D200138A3C /* CoreGraphics.framework in Frameworks */,
+				06A9BDC917B46BE100566C6A /* CFNetwork.framework in Frameworks */,
+				06A9BDC717B46BCE00566C6A /* AudioToolbox.framework in Frameworks */,
 				06A4383517A754D200138A3C /* UIKit.framework in Frameworks */,
+				06A9BDC517B46B8F00566C6A /* Parse.framework in Frameworks */,
 				06A4383117A754D200138A3C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +145,16 @@
 		06A4382F17A754D200138A3C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				06A9BDD617B46C2300566C6A /* SystemConfiguration.framework */,
+				06A9BDD417B46C1B00566C6A /* StoreKit.framework */,
+				06A9BDD217B46C1300566C6A /* Security.framework */,
+				06A9BDD017B46C0C00566C6A /* QuartzCore.framework */,
+				06A9BDCE17B46C0500566C6A /* MobileCoreServices.framework */,
+				06A9BDCC17B46BFF00566C6A /* libz.1.1.3.dylib */,
+				06A9BDCA17B46BF800566C6A /* CoreLocation.framework */,
+				06A9BDC817B46BE100566C6A /* CFNetwork.framework */,
+				06A9BDC617B46BCE00566C6A /* AudioToolbox.framework */,
+				06A9BDC417B46B8F00566C6A /* Parse.framework */,
 				06A4383017A754D200138A3C /* Foundation.framework */,
 				06A4383217A754D200138A3C /* CoreGraphics.framework */,
 				06A4383417A754D200138A3C /* UIKit.framework */,
@@ -118,8 +170,14 @@
 				06A4384017A754D200138A3C /* JukeboxAppDelegate.m */,
 				06A4384217A754D200138A3C /* Main_iPhone.storyboard */,
 				06A4384517A754D200138A3C /* Main_iPad.storyboard */,
+				06A9BDD817B488C800566C6A /* HostsTableViewController.h */,
+				06A9BDD917B488C800566C6A /* HostsTableViewController.m */,
 				06A4384817A754D200138A3C /* JukeboxViewController.h */,
 				06A4384917A754D200138A3C /* JukeboxViewController.m */,
+				06A4386817A7564E00138A3C /* SetupViewController.h */,
+				06A4386917A7564E00138A3C /* SetupViewController.m */,
+				06A4386C17A7664600138A3C /* OwnerModel.h */,
+				06A4386D17A7664600138A3C /* OwnerModel.m */,
 				06A4384B17A754D200138A3C /* Images.xcassets */,
 				06A4383717A754D200138A3C /* Supporting Files */,
 			);
@@ -254,8 +312,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06A4386A17A7564E00138A3C /* SetupViewController.m in Sources */,
 				06A4383D17A754D200138A3C /* main.m in Sources */,
 				06A4384117A754D200138A3C /* JukeboxAppDelegate.m in Sources */,
+				06A9BDDA17B488C800566C6A /* HostsTableViewController.m in Sources */,
+				06A4386E17A7664600138A3C /* OwnerModel.m in Sources */,
 				06A4384A17A754D200138A3C /* JukeboxViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,7 +325,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06A4386B17A7564E00138A3C /* SetupViewController.m in Sources */,
+				06A9BDDB17B488C800566C6A /* HostsTableViewController.m in Sources */,
 				06A4385F17A754D200138A3C /* JukeboxTests.m in Sources */,
+				06A4386F17A7664600138A3C /* OwnerModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +453,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Jukebox/Jukebox-Prefix.pch";
 				INFOPLIST_FILE = "Jukebox/Jukebox-Info.plist";
@@ -402,6 +470,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Jukebox/Jukebox-Prefix.pch";
 				INFOPLIST_FILE = "Jukebox/Jukebox-Info.plist";
@@ -469,6 +541,7 @@
 				06A4386417A754D200138A3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		06A4386517A754D200138A3C /* Build configuration list for PBXNativeTarget "JukeboxTests" */ = {
 			isa = XCConfigurationList;
@@ -477,6 +550,7 @@
 				06A4386717A754D200138A3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

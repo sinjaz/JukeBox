@@ -7,6 +7,7 @@
 //
 
 #import "JukeboxViewController.h"
+#import <Parse/Parse.h>
 
 @interface JukeboxViewController ()
 

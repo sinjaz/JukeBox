@@ -36,6 +36,7 @@
     locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     [locationManager startUpdatingLocation];
     
+    
     [super viewDidLoad];
     self.nameTextField.delegate = self;
 	// Do any additional setup after loading the view.

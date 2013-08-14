@@ -8,9 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import "RoomHandler.h"
 
-@interface SetupViewController : UIViewController <UITextFieldDelegate>{
+@class SetupViewController;
+
+
+
+@interface SetupViewController : UIViewController <UITextFieldDelegate, RoomDelegate>{
     CLLocationManager *locationManager;
+    RoomHandler *roomHandler;
 }
 
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;

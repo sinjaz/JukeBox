@@ -7,13 +7,17 @@
 //
 
 #import "SetupViewController.h"
-#import <Parse/Parse.h>
+#import "RoomHandler.h"
 
 @interface SetupViewController () <CLLocationManagerDelegate>
 
 @end
 
 @implementation SetupViewController
+
+-(void)roomCreationComplete{
+    [self performNextSegue];
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -39,7 +43,8 @@
     
     [super viewDidLoad];
     self.nameTextField.delegate = self;
-	// Do any additional setup after loading the view.
+
+    roomHandler = [RoomHandler sharedInstance];
 }
 
 - (void)didReceiveMemoryWarning
@@ -61,9 +66,6 @@
 -(void)nextStep{
     if(![self.nameTextField.text isEqualToString:@""]){
         
-        PFObject *newHost = [PFObject objectWithClassName:@"Host"];
-        [newHost setObject:self.nameTextField.text forKey:@"name"];
-        
         NSMutableDictionary *location = [[NSMutableDictionary alloc] init];
         NSNumber *latitude = [NSNumber numberWithDouble:locationManager.location.coordinate.latitude];
         NSNumber *longitude = [NSNumber numberWithDouble:locationManager.location.coordinate.longitude];
@@ -71,13 +73,7 @@
         [location setValue:latitude forKey:@"latitude"];
         [location setValue:longitude forKey:@"longitude"];
         
-        [newHost setObject:location forKey:@"location"];
-        
-        PFObject *hosts = [PFObject objectWithClassName:@"Hosts"];
-        [hosts setObject:newHost forKey:@"host"];
-        [hosts saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-            [self performNextSegue];
-        }];
+        [roomHandler createNewRoomWithName:self.nameTextField.text withLocation:location forHost:self];
     }
 }
 

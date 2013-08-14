@@ -38,6 +38,8 @@
 		06A9BDD717B46C2300566C6A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A9BDD617B46C2300566C6A /* SystemConfiguration.framework */; };
 		06A9BDDA17B488C800566C6A /* HostsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A9BDD917B488C800566C6A /* HostsTableViewController.m */; };
 		06A9BDDB17B488C800566C6A /* HostsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A9BDD917B488C800566C6A /* HostsTableViewController.m */; };
+		06AD1AEA17BB0F1000278439 /* RoomHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 06AD1AE917BB0F1000278439 /* RoomHandler.m */; };
+		06AD1AEB17BB0F1000278439 /* RoomHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 06AD1AE917BB0F1000278439 /* RoomHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,8 @@
 		06A9BDD617B46C2300566C6A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		06A9BDD817B488C800566C6A /* HostsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostsTableViewController.h; sourceTree = "<group>"; };
 		06A9BDD917B488C800566C6A /* HostsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostsTableViewController.m; sourceTree = "<group>"; };
+		06AD1AE817BB0F1000278439 /* RoomHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomHandler.h; sourceTree = "<group>"; };
+		06AD1AE917BB0F1000278439 /* RoomHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +180,8 @@
 				06A4384917A754D200138A3C /* JukeboxViewController.m */,
 				06A4386817A7564E00138A3C /* SetupViewController.h */,
 				06A4386917A7564E00138A3C /* SetupViewController.m */,
+				06AD1AE817BB0F1000278439 /* RoomHandler.h */,
+				06AD1AE917BB0F1000278439 /* RoomHandler.m */,
 				06A4386C17A7664600138A3C /* OwnerModel.h */,
 				06A4386D17A7664600138A3C /* OwnerModel.m */,
 				06A4384B17A754D200138A3C /* Images.xcassets */,
@@ -317,6 +323,7 @@
 				06A4384117A754D200138A3C /* JukeboxAppDelegate.m in Sources */,
 				06A9BDDA17B488C800566C6A /* HostsTableViewController.m in Sources */,
 				06A4386E17A7664600138A3C /* OwnerModel.m in Sources */,
+				06AD1AEA17BB0F1000278439 /* RoomHandler.m in Sources */,
 				06A4384A17A754D200138A3C /* JukeboxViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,6 +334,7 @@
 			files = (
 				06A4386B17A7564E00138A3C /* SetupViewController.m in Sources */,
 				06A9BDDB17B488C800566C6A /* HostsTableViewController.m in Sources */,
+				06AD1AEB17BB0F1000278439 /* RoomHandler.m in Sources */,
 				06A4385F17A754D200138A3C /* JukeboxTests.m in Sources */,
 				06A4386F17A7664600138A3C /* OwnerModel.m in Sources */,
 			);

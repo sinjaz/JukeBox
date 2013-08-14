@@ -26,6 +26,14 @@ static RoomHandler *sharedInstance = nil;
     return _currentRoom;
 }
 
+-(void)deleteRoomForHost:(id)host{
+    self.delegate = host;
+    
+    [_currentRoom deleteInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        [self.delegate roomDeleteComplete];
+    }];
+}
+
 -(void)createNewRoomWithName:(NSString*)name withLocation:(NSObject*)location forHost:(id)host{
     
     self.delegate = host;

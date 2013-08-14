@@ -12,8 +12,10 @@
 @class SetupViewController;
 
 @protocol RoomDelegate <NSObject>
-- (void)roomCreationComplete;
+
 @optional
+- (void)roomCreationComplete;
+- (void)roomDeleteComplete;
 - (void)foo:(SetupViewController *)foo didDoSomethingAnimated:(BOOL)flag;
 @end
 
@@ -22,6 +24,7 @@
 + (id)sharedInstance;
 -(void)createNewRoomWithName:(NSString*)name withLocation:(NSObject*)location forHost:(id)host;
 -(void)updateRoomName:(NSString*)name forHost:(id)host;
+-(void)deleteRoomForHost:(id)host;
 
 @property (nonatomic, strong) PFObject *currentRoom;
 

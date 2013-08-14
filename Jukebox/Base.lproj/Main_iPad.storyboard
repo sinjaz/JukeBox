@@ -78,6 +78,12 @@
                                     <action selector="nextButton:" destination="w1j-bg-LTm" eventType="touchUpInside" id="hXz-ey-QZg"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Give your room a name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NrQ-oa-TMI">
+                                <rect key="frame" x="223" y="403" width="177" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -123,17 +129,44 @@
             </objects>
             <point key="canvasLocation" x="2441" y="200"/>
         </scene>
-        <!--View Controller-->
+        <!--Room View Controller-->
         <scene sceneID="fz4-PA-yH1">
             <objects>
-                <viewController id="67S-cO-g6K" sceneMemberID="viewController">
+                <viewController id="67S-cO-g6K" customClass="RoomViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2ti-Wi-XfX">
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Room Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8UR-2D-GQJ">
+                                <rect key="frame" x="20" y="115" width="728" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Tb-wg-COk">
+                                <rect key="frame" x="294" y="384" width="181" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" title="Delete Room">
+                                    <color key="titleColor" red="0.55436905569999995" green="0.0" blue="0.013068540999999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteButtonTapped:" destination="67S-cO-g6K" eventType="touchUpInside" id="IbA-FR-ngh"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="iea-GK-zD0"/>
+                    <connections>
+                        <outlet property="roomNameLabel" destination="8UR-2D-GQJ" id="l3X-5A-rgA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="136-zi-meL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -165,6 +198,13 @@
         </class>
         <class className="JukeboxViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/JukeboxViewController.h"/>
+        </class>
+        <class className="RoomViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RoomViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="deleteButtonTapped:"/>
+                <relationship kind="outlet" name="roomNameLabel" candidateClass="UILabel"/>
+            </relationships>
         </class>
         <class className="SetupViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SetupViewController.h"/>

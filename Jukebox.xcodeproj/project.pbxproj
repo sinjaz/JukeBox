@@ -40,6 +40,8 @@
 		06A9BDDB17B488C800566C6A /* HostsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A9BDD917B488C800566C6A /* HostsTableViewController.m */; };
 		06AD1AEA17BB0F1000278439 /* RoomHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 06AD1AE917BB0F1000278439 /* RoomHandler.m */; };
 		06AD1AEB17BB0F1000278439 /* RoomHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 06AD1AE917BB0F1000278439 /* RoomHandler.m */; };
+		06F41B6617BC26D20085AA5D /* RoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F41B6517BC26D20085AA5D /* RoomViewController.m */; };
+		06F41B6717BC26D20085AA5D /* RoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F41B6517BC26D20085AA5D /* RoomViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,8 @@
 		06A9BDD917B488C800566C6A /* HostsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostsTableViewController.m; sourceTree = "<group>"; };
 		06AD1AE817BB0F1000278439 /* RoomHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomHandler.h; sourceTree = "<group>"; };
 		06AD1AE917BB0F1000278439 /* RoomHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomHandler.m; sourceTree = "<group>"; };
+		06F41B6417BC26D20085AA5D /* RoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomViewController.h; sourceTree = "<group>"; };
+		06F41B6517BC26D20085AA5D /* RoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +178,8 @@
 				06A4384017A754D200138A3C /* JukeboxAppDelegate.m */,
 				06A4384217A754D200138A3C /* Main_iPhone.storyboard */,
 				06A4384517A754D200138A3C /* Main_iPad.storyboard */,
+				06F41B6417BC26D20085AA5D /* RoomViewController.h */,
+				06F41B6517BC26D20085AA5D /* RoomViewController.m */,
 				06A9BDD817B488C800566C6A /* HostsTableViewController.h */,
 				06A9BDD917B488C800566C6A /* HostsTableViewController.m */,
 				06A4384817A754D200138A3C /* JukeboxViewController.h */,
@@ -321,6 +327,7 @@
 				06A4386A17A7564E00138A3C /* SetupViewController.m in Sources */,
 				06A4383D17A754D200138A3C /* main.m in Sources */,
 				06A4384117A754D200138A3C /* JukeboxAppDelegate.m in Sources */,
+				06F41B6617BC26D20085AA5D /* RoomViewController.m in Sources */,
 				06A9BDDA17B488C800566C6A /* HostsTableViewController.m in Sources */,
 				06A4386E17A7664600138A3C /* OwnerModel.m in Sources */,
 				06AD1AEA17BB0F1000278439 /* RoomHandler.m in Sources */,
@@ -333,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06A4386B17A7564E00138A3C /* SetupViewController.m in Sources */,
+				06F41B6717BC26D20085AA5D /* RoomViewController.m in Sources */,
 				06A9BDDB17B488C800566C6A /* HostsTableViewController.m in Sources */,
 				06AD1AEB17BB0F1000278439 /* RoomHandler.m in Sources */,
 				06A4385F17A754D200138A3C /* JukeboxTests.m in Sources */,
